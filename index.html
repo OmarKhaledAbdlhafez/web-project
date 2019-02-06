@@ -1,0 +1,35 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <input id="input" type="text" required>
+        <button style="display: block;" onclick="star()">click me</button>
+   <p id="welcome"></p>
+     <p id="length"></p>
+     <div id="astric"></div>
+     <p id="break"></p>
+        <script>
+            function star(){
+        var str= document.getElementById('input').value;
+    document.getElementById('welcome').innerHTML="welcome "+str;
+  document.getElementById("length").innerHTML=("the length of ur name is   "+str.length+'<br>');
+   for(var i =0 ;i<=str.length;i++){
+     for(var j=0; j<i;j++){
+             var x =document.getElementById('astric');
+             var y =document.createElement('a');
+             y.textContent='*';
+             x.appendChild(y);  
+        }
+       var m =document.getElementById('astric');
+             var n =document.createElement('br');
+             n.textContent='';
+             m.appendChild(n);  
+    }
+                
+            }
+        
+        </script>
+        
+    </body>
+</html>
